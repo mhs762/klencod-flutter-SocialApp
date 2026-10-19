@@ -1,15 +1,20 @@
 name: socialapp
-description: A professional task manager built with Flutter.
+description: SocialApp
 publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.0.0 <4.0.0'
+  sdk: '>=3.3.0 <4.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
-  shared_preferences: ^2.2.2
+  firebase_core: ^2.32.0
+  firebase_auth: ^4.20.0
+  cloud_firestore: ^4.17.5
+  cryptography: ^2.7.0
+  flutter_secure_storage: ^9.2.2
+  image_picker: ^1.1.2
 
 flutter:
   uses-material-design: true
