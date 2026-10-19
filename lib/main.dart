@@ -1636,5 +1636,28 @@ class _ChatPageState extends State<ChatPage> {
               },
             ),
           ),
-          SafeArea(
-   
+          SafeArea(              top: false,
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(8, 4, 8, 8),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: TextField(
+                        controller: _controller,
+                        onSubmitted: (_) => _send(),
+                        decoration: const InputDecoration(),
+                      ),
+                    ),
+                    IconButton(
+                      onPressed: _send,
+                      icon: const Icon(Icons.send),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+         ), 
+          );
+  }
+}
